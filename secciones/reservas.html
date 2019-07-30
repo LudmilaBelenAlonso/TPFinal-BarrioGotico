@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido al Barrio Gótico</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body id="reservas">
+   
+        <header>
+            <nav class="menu">
+               <ul>
+                   <li><a href="historia.html" class="nav">Historia</a></li>
+                   <li><a href="quever.html">Qué Ver</a></li>
+                   <li><a href="../index.html" id="inicio">Barrio Gótico</a></li>
+                   <li><a href="quehacer.html">Qué hacer</a></li>
+                   <li><a href="leyendas.html" class="nav">Leyendas</a></li>
+               </ul>
+            </nav>
+            <div class="encabezado">
+                <h1>Reserva tu Lugar</h1>
+                <p>Desde aquí reserva tu actividad en el día que prefieras. Te solicitamos una foto para poder realizarte un pase identificatorio para la actividad que decidas, el mismo será remitido al e-mail que nos proporcionaste.</p>
+            </div>
+        </header>
+        
+        
+        <main>
+            <section class="gral">
+                <article>
+                    
+                    <form action="../php/contact.php" method="post">
+                        <p class="titulo">Actividad</p>
+                        <div class="select" id="act">
+                            <select name="actividad">
+                                  <option value="Historias y leyendas del Barrio Gótico">Historias y leyendas del Barrio Gótico</option>
+                                  <option value="Barcelona gótica">Barcelona gótica</option>
+                                  <option value="Tour por el Barrio Gótico  y Palau Güell">Tour por el Barrio Gótico  y Palau Güell</option>
+                                  <option value="Barrio Gótico y taller de cocina">Barrio Gótico y taller de cocina</option>
+                                  <option value="Seminario Narrativa - Terror Gótico">Seminario Narrativa - Terror Gótico</option>
+                            </select>
+                        </div>
+                        
+                        <p class="titulo">Día</p>
+                        <input type="date" name="fecha" min="2019-07-01" max="2019-12-31" class="datepicker" data-date-format="dd/mm/yyyy">
+                        
+                        <p class="titulo">Nombre y Apellido</p>
+                        <input type="text" name="nombre" placeholder="Escriba su nombre aquí" required>
+                        
+                        <p class="titulo">Adjunte su foto</p>
+                        <input type="file" name="archivo" class="input">
+                       
+                        <p class="titulo">E-mail</p>
+                        <input type="email" name="email" placeholder="Ingrese su email aquí">
+                        
+                        <p class="titulo">Intereses</p>
+                        <p class="subtitulo">Por favor indiquenos sus intereses, para poder ubicarlo en un grupo  afin a sus gustos</p>
+                        <input type="checkbox" name="intereses" id="hist" value="Historia" ><label for="hist">Historia</label>
+                        <input type="checkbox" name="intereses" id="arq" value="Arquitectura" ><label for="arq">Arquitectura</label>
+                        <input type="checkbox" name="intereses" id="cook" value="Cocina" ><label for="cook">Cocina</label>
+                        <input type="checkbox" name="intereses" id="lit" value="Literatura" ><label for="lit">Literatura</label>
+                        
+                        
+                        <input type="submit" value="Reservar" id="boton">
+                        
+                    </form>
+                  
+                </article>
+            </section>
+        </main>
+    
+    <footer class="footer">
+        <p>Ludmila Belén Alonso - Diseño y Desarrollo Web - Prof. Mabel García - TP Final</p>
+    </footer>
+</body>
+</html>

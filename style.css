@@ -1,0 +1,490 @@
+/*Declaración Font Face -- Tipografía Especifica*/
+@font-face{
+    font-family: barriogotico;
+    src:url(font/mediteran.woff);
+    src:url(font/mediteran.woff2);
+    src:url(font/mediteran.otf);
+    src:url(font/mediteran.ttf);
+    src:url(font/mediteran.ttf);
+}
+
+@font-face{
+    font-family: copperplate;
+    src:url(font/copperplatelight.woff);
+    src:url(font/copperplatelight.woff2);
+    src:url(font/copperplatelight.otf);
+    src:url(font/copperplatelight.ttf);
+    src:url(font/copperplatelight.ttf);
+}
+
+/******************** NAV *****************************/
+#inicio{
+    font-size: 0;
+    background-image: url(img/logoBG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.menu {
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul{
+    align-items: center;
+}
+
+.nav {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/***********************Footer***********************/
+
+#home footer {
+    margin-top: 150px;
+}
+
+.footer, #quehacer .footer p {
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+}
+
+/************  Home *********************************/
+#home {
+    background-image: url(img/bkgHome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin:0;
+}
+
+/*Tipografía y estilos del nombre del barrio*/
+#home h1{
+    font-family: barriogotico, 'Cinzel Decorative', serif;
+    font-size: 60px;
+    padding-left: 20px;
+    margin: auto;
+    background-color: #000000;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/**Corte Negro central - bkg y p**/
+
+.seccion {
+    margin-top: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#home .seccion p {
+    background-color: rgba(0,0,0,.9);
+    margin: auto;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 300px;
+    padding-right: 300px;    
+}
+
+#p1 {
+   padding-top: 50px;
+}
+
+#p2 {
+    padding-bottom: 50px;
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+/******************** Que Ver***********************/
+
+#quever {
+    background-image: url(img/bkgPuntosDeInteres.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin:0;
+}
+
+/** Espacio entre volver al inicio y la imagen **/
+#plazasj img {
+    margin-top: 20px;
+}
+
+/*menu de los puntos de interes*/
+#menulugares li {
+    display: inline-block;
+    padding: 18px 18px 0;  
+}
+
+#menulugares  {
+    padding: 0 100px 20px 100px;
+    background-color: rgba(0,0,0,.9);
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+#menulugares a {
+    text-decoration: none;
+}
+
+#menulugares a:hover {
+    color:#fef5b2;
+}
+
+/**Alineacion de los puntos de interes*/
+#lugares {
+    padding-bottom: 70px;
+    padding-left: 0;
+}
+
+#lugares li {
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#lugares h2 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+#lugares p {
+    font-size: 18px;
+}
+
+/** Flotaciones **/
+
+.left {
+    float: left;
+    width: 400px;
+    margin-right: 30px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.rigth {
+    float:right;
+    width: 455px
+}
+
+ #catedral, #bisbe, #plazareal, #plazarey, #plazanova, #museo  {
+    overflow: hidden;
+}
+
+/** Cajas para las imagenes para igualar el alto**/
+.img {
+    height: 225px;
+    overflow: hidden;
+}
+
+/**Caja con transparencia para el contenido**/
+#lugares li{
+    background-color: rgba(0,0,0,.9);
+}
+
+ol {
+    list-style-type: none;
+}
+
+/*********************** Que hacer ********************/
+
+#quehacer {
+    background-image: url(img/bkgAct.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin:0;
+}
+
+#quehacer h2 {
+    text-align: left;
+}
+
+#quehacer p {
+    text-align: justify;
+}
+
+/** mod del ancla que lleva al form **/
+a[href="reservas.html"] {
+    text-decoration: none;
+    background-color: #ffffff;
+    color:#000000;
+    padding: 10px;
+    float: right;
+    width: 400px;
+    text-align: center;
+}
+
+a[href="reservas.html"]:hover{
+    background-color: #09d1a2;
+}
+
+/**cajas por cada li**/
+#quehacer article li {
+    background-color: rgba(0,0,0,.9);
+}
+
+#actividades li {
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+#actividades ul {
+    list-style: none;
+    display: block;
+    padding-left: 0;
+}
+
+/*************************Reservas******************/
+
+#reservas, #gracias {
+    background-image: url(img/bkgReservas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin:0;
+}
+
+#reservas form p {
+    text-align: left;
+    padding-left: 70px;
+    margin-bottom: 5px;
+}
+
+.select, input  {
+    margin-left: 70px;
+    width: 500px;
+    height: 25px;
+    font-family: violina, helvetica, arial, sans-serif;
+    font-size: 18px;
+}
+
+/**Boton**/
+#boton { 
+    display: inline-block;
+    color: #000000;
+    margin-bottom: 50px;
+    margin-top: 50px;  
+}
+
+/**mod de los estilos por defecto en el combo desplegable**/
+.select {
+    position: relative;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.select:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+.select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+  }
+
+
+/** mod del estilo del input date**/
+input[type="date"] {
+    background:#fff url(img/calendario.svg)  97% 50% no-repeat ;
+    font-size: 20px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+form {
+    background-color: rgba(0,0,0,.9);
+    margin: 20px 0 20px 0;
+    padding-top: 20px;
+}
+
+/**checkbox**/
+label {
+    font-family: violina, helvetica, arial, sans-serif;
+    font-size: 18px;
+    display: inline;
+    
+}
+
+#hist, #arq, #cook, #lit {
+    width: auto;
+    height: auto;
+    
+}
+.titulo {
+    font-size: 20px;
+}
+
+.subtitulo {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/**input file**/
+
+.input {
+  color: #ffffff;
+}
+
+    
+/*******************Gracias*************************/
+#gracias .gral{
+    height: 900px;
+}
+
+#gracias h1 {
+    font-size: 30px;
+}
+
+a[href="../index.html"]{    
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 70px
+}
+
+
+/**************leyendas*****************************/
+
+#leyendas {
+    background-image: url(img/bkgleyendas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin:0;
+}
+
+.parrafomist {
+    padding: 20px 70px 30px 70px;
+    background-color: rgba(0,0,0,.9);
+    margin: 20px 0 20px 0;
+}
+
+#leyendas img{
+    display: block;
+    margin: auto;
+}
+
+
+
+/********************historias**********************/
+
+#history {
+    background-image: url(img/bkghistoria.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin:0;
+}
+
+.parrafohist {
+    padding: 20px 70px 30px 70px;
+    background-color: rgba(0,0,0,.9);
+    margin: 20px 0 20px 0;
+}
+/************ Contenido ****************************/
+
+/**Tipografias Parrafos**/
+input[placeholder], .gral li, select, #boton, .mitos, .historia {
+    font-family: violina, helvetica, arial, sans-serif;
+    font-size: 20px;
+}
+
+/**body**/
+.gral{
+    width: 1024px;
+    /*background-color: rgba(0,0,0,.9);*/
+    margin: auto;
+}
+
+.gral h1 {
+    margin: 0;
+}
+
+
+/**Tipografia general**/
+.menu a, #home p, .footer p, .gral h1, .gral h2, .encabezado p, .encabezado h1, .titulo{
+    font-family: copperplate, Times, serif;
+}
+
+/*.seccion p,*/ 
+h1, a, #quehacer .footer p, .footer p, .gral h1, .gral h2, p, label {
+    color: #ffffff;
+}
+
+/**Encabezado **/
+.encabezado h1 { 
+    font-size: 70px;
+}
+
+.encabezado p {
+    font-size: 25px;
+}
+
+.encabezado p, .encabezado h1 {
+    font-weight: lighter;
+    text-align: justify;
+    padding: 20px 70px 0 70px;
+    margin: 0;
+}
+
+
+.encabezado{
+    padding: 0 100px 0 100px;
+    background-color: #000000;
+    padding-bottom: 20px;
+}
